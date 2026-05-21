@@ -1,0 +1,216 @@
+.ingredient-detail-main {
+  flex: 1;
+  padding: 48px 0 80px;
+  background: var(--color-bg);
+}
+
+.id-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 24px 0 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-line);
+}
+.id-header h1 {
+  margin: 8px 0 8px;
+  text-transform: capitalize;
+}
+.id-category {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  background: rgba(0,0,0,0.05);
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: lowercase;
+}
+.id-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.id-edit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+}
+.id-edit-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.id-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.id-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.id-section-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+.id-section-sub {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+.id-section-sub code {
+  background: rgba(0,0,0,0.05);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+}
+.id-empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.id-allergens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.id-allergen-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(200,75,49,0.12);
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+.id-allergen-remove {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s ease;
+}
+.id-allergen-remove:hover {
+  background: rgba(200,75,49,0.2);
+}
+
+.id-allergen-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.id-recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.id-recipe-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: rgba(0,0,0,0.01);
+}
+.id-recipe-link {
+  font-weight: 600;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.id-recipe-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.id-recipe-cuisine {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  background: rgba(0,0,0,0.04);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.id-recipe-qty {
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.id-sub-block { margin-bottom: 14px; }
+.id-sub-block:last-child { margin-bottom: 0; }
+.id-sub-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  margin: 0 0 6px;
+}
+.id-sub-list {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0;
+}
+.id-sub-list li {
+  font-size: 0.9rem;
+  padding: 2px 0;
+}
+.id-sub-list strong {
+  color: var(--color-ink);
+  text-transform: capitalize;
+}
+.id-sub-ratio {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.btn-danger {
+  background: rgba(200,75,49,0.08);
+  color: var(--color-primary);
+  border: 1px solid rgba(200,75,49,0.3);
+}
+.btn-danger:hover:not(:disabled) {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-danger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 720px) {
+  .id-header { flex-direction: column; }
+  .id-edit-form { grid-template-columns: 1fr; }
+  .id-edit-actions { grid-column: span 1; }
+  .id-recipe-row { grid-template-columns: 1fr; gap: 6px; }
+}

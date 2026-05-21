@@ -1,0 +1,41 @@
+.mini-graph {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, #FFFFFF 0%, #FFF1DD 100%);
+  box-shadow: var(--shadow-lg);
+  padding: 18px 18px 22px;
+  overflow: hidden;
+}
+
+.mini-graph svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mini-graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.78rem;
+  color: var(--color-ink-soft);
+  padding: 6px 8px 0;
+  border-top: 1px dashed var(--color-line);
+  margin-top: 8px;
+  padding-top: 14px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+.dot-recipe     { background: #C84B31; }
+.dot-ingredient { background: #E89B4E; }
+.dot-cuisine    { background: #3A7D44; }
+.dot-user       { background: #1F2421; }
+.dot-allergen   { background: #7A3E2A; }
