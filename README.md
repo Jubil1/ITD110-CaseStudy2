@@ -10,6 +10,20 @@ A full-stack web app for the **Agriculture & Food Systems** domain (ITD110 Case 
 
 ## Features
 
+| Status | Feature |
+| --- | --- |
+| ✓ | Landing page |
+| ✓ | User authentication (JWT login / register / logout) |
+| ✓ | CRUD — Recipes & Ingredients |
+| ✓ | Search (name, cuisine, ingredient) |
+| ✓ | **Pantry Mode** — match recipes by what you have |
+| ✓ | **Smart Substitutes** — `SUBSTITUTES_FOR` lookup |
+| ✓ | Dashboard (ingredients, cuisines, allergens, likes) |
+| ✓ | JSON backup export / import |
+| ✓ | Ingredients hub + FDA Big 9 allergen links |
+| — | Allergen-Safe standalone page (covered in Pantry exclusion) |
+| — | Collaborative filtering (schema supports `LIKED`; UI not built) |
+
 ### Core requirements
 
 | Feature | Route / API |
