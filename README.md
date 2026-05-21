@@ -21,8 +21,7 @@ A full-stack web app for the **Agriculture & Food Systems** domain (ITD110 Case 
 | ✓ | Dashboard (ingredients, cuisines, allergens, likes) |
 | ✓ | JSON backup export / import |
 | ✓ | Ingredients hub + FDA Big 9 allergen links |
-| — | Allergen-Safe standalone page (covered in Pantry exclusion) |
-| — | Collaborative filtering (schema supports `LIKED`; UI not built) |
+
 
 ### Core requirements
 
